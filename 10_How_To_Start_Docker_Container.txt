@@ -18,6 +18,17 @@ sudo docker attach mynodered
 # If you need to restart the container (e.g. after a reboot or restart of the Docker daemon):
 sudo docker start mynodered
 sudo docker stop mynodered
+sudo docker start hello-nginx
+sudo docker stop hello-nginx
+
+# NGINX Web Server
+mkdir example
+cd example
+wget https://raw.githubusercontent.com/jetsonworld/startDockerContainer/master/Dockerfile
+sudo docker build --tag hello:0.1 .
+sudo docker images
+sudo docker run --name hello-nginx -d -p 80:80 -v /root/data:/data hello:0.1
+sudo docker ps
 
 # List containers
 sudo docker ps
@@ -29,6 +40,8 @@ sudo docker images
 sudo docker events
 # Display system-wide information
 sudo docker info
+# Docker STATS
+sudo docker stats
 
 # References:
 https://docs.docker.com/engine/reference/commandline/
