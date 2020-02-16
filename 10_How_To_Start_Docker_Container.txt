@@ -4,6 +4,7 @@ How To Start Docker Container on Jetson Nano:
 # Check the versions:
 sudo docker version
 
+# Check NVIDIA Container Runtime
 sudo docker info | grep nvidia
 sudo dpkg --get-selections | grep nvidia
 
