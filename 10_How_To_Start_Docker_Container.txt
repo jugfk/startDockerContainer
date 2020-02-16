@@ -10,10 +10,14 @@ sudo dpkg --get-selections | grep nvidia
 ------------------------------------------------------------------------------------------------
 # 1st experiment
 sudo docker run hello-world
+sudo docker images
 ------------------------------------------------------------------------------------------------
 # 2nd experiment
 # Run Node-RED on Docker Container
 sudo docker run -it -p 1880:1880 --name mynodered nodered/node-red
+wget https://raw.githubusercontent.com/jetsonworld/javascript-thermal-monitor/master/flows.json
+sudo docker images
+sudo docker ps
 
 # If you need to restart the container (e.g. after a reboot or restart of the Docker daemon):
 sudo docker start mynodered
@@ -31,6 +35,7 @@ sudo docker build --tag hello:0.1 .
 sudo docker images
 sudo docker run --name hello-nginx -d -p 80:80 -v /root/data:/data hello:0.1
 sudo docker ps
+sudo docker images
 
 # Start & stop hello-nginx
 sudo docker start hello-nginx
