@@ -8,19 +8,19 @@ sudo docker version
 sudo docker info | grep nvidia
 sudo dpkg --get-selections | grep nvidia
 
+# 1st Test
 sudo docker run hello-world
 
+# 2nd Test
 # Run Node-RED on Docker Container
 sudo docker run -it -p 1880:1880 --name mynodered nodered/node-red
-
-# To reattach to the terminal (to see logging) run:
-sudo docker attach mynodered
 
 # If you need to restart the container (e.g. after a reboot or restart of the Docker daemon):
 sudo docker start mynodered
 sudo docker stop mynodered
-sudo docker start hello-nginx
-sudo docker stop hello-nginx
+
+# To reattach to the terminal (to see logging) run:
+sudo docker attach mynodered
 
 # NGINX Web Server
 mkdir example
@@ -30,6 +30,10 @@ sudo docker build --tag hello:0.1 .
 sudo docker images
 sudo docker run --name hello-nginx -d -p 80:80 -v /root/data:/data hello:0.1
 sudo docker ps
+
+# Start & stop hello-nginx
+sudo docker start hello-nginx
+sudo docker stop hello-nginx
 
 # List containers
 sudo docker ps
