@@ -35,8 +35,8 @@ localhost:1880
 ```
 $ wget https://raw.githubusercontent.com/jetsonworld/javascript-thermal-monitor/master/flows.json
 ```
-오른쪽에 ipmport를 클릭한후 다운로드한 flow.json을 업로드합니다.
 
+먼저 다음과 같이 대쉬보드를 설치해주세요. 
 ![01image](https://raw.githubusercontent.com/jetsonworld/startDockerContainer/master/01_Images/01_Using_Node-RED_On_Docker.png)
 
 
