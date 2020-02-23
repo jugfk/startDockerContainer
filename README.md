@@ -32,12 +32,6 @@ localhost:1880
 입력하세요.
 ![00image](https://raw.githubusercontent.com/jetsonworld/startDockerContainer/master/01_Images/00_Using_Node-RED_On_Docker.png)
 
-
-터미널에서 미리 만든 자바스크립트 flow.json 파일을 다운로드 하는법:
-```
-$ wget https://raw.githubusercontent.com/jetsonworld/javascript-thermal-monitor/master/flows.json
-```
-
 먼저 다음과 같이 대쉬보드를 설치해주세요. 
 ![01image](https://raw.githubusercontent.com/jetsonworld/startDockerContainer/master/01_Images/01_Using_Node-RED_On_Docker.png)
 
