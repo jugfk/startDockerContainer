@@ -30,6 +30,8 @@ $ sudo docker run -it -p 1880:1880 --name mynodered nodered/node-red
 localhost:1880 
 ```
 입력하세요.
+![00image](https://raw.githubusercontent.com/jetsonworld/startDockerContainer/master/01_Images/00_Using_Node-RED_On_Docker.png)
+
 
 터미널에서 미리 만든 자바스크립트 flow.json 파일을 다운로드 하는법:
 ```
