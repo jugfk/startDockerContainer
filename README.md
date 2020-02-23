@@ -39,4 +39,5 @@ $ wget https://raw.githubusercontent.com/jetsonworld/javascript-thermal-monitor/
 먼저 다음과 같이 대쉬보드를 설치해주세요. 
 ![01image](https://raw.githubusercontent.com/jetsonworld/startDockerContainer/master/01_Images/01_Using_Node-RED_On_Docker.png)
 
+![02image](https://raw.githubusercontent.com/jetsonworld/startDockerContainer/master/01_Images/02_Using_Node-RED_On_Docker.png)
 
