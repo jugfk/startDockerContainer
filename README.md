@@ -46,3 +46,42 @@ $ wget https://raw.githubusercontent.com/jetsonworld/javascript-thermal-monitor/
 ![03image](https://raw.githubusercontent.com/jetsonworld/startDockerContainer/master/01_Images/03_Using_Node-RED_On_Docker.png)
 
 ![04image](https://raw.githubusercontent.com/jetsonworld/startDockerContainer/master/01_Images/04_Using_Node-RED_On_Docker.png)
+
+mynodered 컨테이너의 상태를 확인해봅니다.
+```
+sudo docker images
+sudo docker ps
+```
+
+mynodered 컨테이너를 시작/정지하기
+
+```
+sudo docker start mynodered
+sudo docker stop mynodere
+```
+노드레드의 디버깅 로그데이타 보기
+```
+sudo docker attach mynodered
+```
+
+***
+* 세번째 <b>‘도커 컨테이너 기반 NGINX 웹서버’</b> 실습
+```
+$ mkdir example
+$ cd example
+$ wget https://raw.githubusercontent.com/jetsonworld/
+$ sudo docker build --tag hello:0.1 .
+$ sudo docker run --name hello-nginx -d -p 80:80 -v /root/data:/data hello:0.1
+```
+
+NGINX 웹서버 컨테이너의 상태확인하기
+```
+sudo docker images
+sudo docker ps
+```
+
+NGINX 웹서버 컨테이너의 시작/정지하기
+```
+sudo docker start hello-nginx
+sudo docker stop hello-nginx
+```
