@@ -85,3 +85,5 @@ NGINX 웹서버 컨테이너의 시작/정지하기
 sudo docker start hello-nginx
 sudo docker stop hello-nginx
 ```
+
+(Thank you for your precious devotion.)
