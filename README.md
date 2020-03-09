@@ -57,7 +57,7 @@ mynodered 컨테이너를 시작/정지하기
 
 ```
 sudo docker start mynodered
-sudo docker stop mynodere
+sudo docker stop mynodered
 ```
 노드레드의 디버깅 로그데이타 보기
 ```
