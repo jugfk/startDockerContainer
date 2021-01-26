@@ -30,22 +30,22 @@ $ sudo docker run -it -p 1880:1880 --name mynodered nodered/node-red
 localhost:1880 
 ```
 입력하세요.
-![00image](https://raw.githubusercontent.com/jetsonworld/startDockerContainer/master/01_Images/00_Using_Node-RED_On_Docker.png)
+![00image](https://raw.githubusercontent.com/jugfk/startDockerContainer/master/01_Images/00_Using_Node-RED_On_Docker.png)
 
 먼저 다음과 같이 대쉬보드를 설치해주세요. 
-![01image](https://raw.githubusercontent.com/jetsonworld/startDockerContainer/master/01_Images/01_Using_Node-RED_On_Docker.png)
+![01image](https://raw.githubusercontent.com/jugfk/startDockerContainer/master/01_Images/01_Using_Node-RED_On_Docker.png)
 
-![02image](https://raw.githubusercontent.com/jetsonworld/startDockerContainer/master/01_Images/02_Using_Node-RED_On_Docker.png)
+![02image](https://raw.githubusercontent.com/jugfk/startDockerContainer/master/01_Images/02_Using_Node-RED_On_Docker.png)
 
 터미널에서 미리 만든 자바스크립트 flow.json 파일을 다운로드 하는법:
 ```
-$ wget https://raw.githubusercontent.com/jetsonworld/javascript-thermal-monitor/master/flows.json
+$ wget https://raw.githubusercontent.com/jugfk/javascript-thermal-monitor/master/flows.json
 ```
 오른쪽에 ipmport를 클릭한후 다운로드한 flow.json을 업로드합니다.
 
-![03image](https://raw.githubusercontent.com/jetsonworld/startDockerContainer/master/01_Images/03_Using_Node-RED_On_Docker.png)
+![03image](https://raw.githubusercontent.com/jugfk/startDockerContainer/master/01_Images/03_Using_Node-RED_On_Docker.png)
 
-![04image](https://raw.githubusercontent.com/jetsonworld/startDockerContainer/master/01_Images/04_Using_Node-RED_On_Docker.png)
+![04image](https://raw.githubusercontent.com/jugfk/startDockerContainer/master/01_Images/04_Using_Node-RED_On_Docker.png)
 
 mynodered 컨테이너의 상태를 확인해봅니다.
 ```
@@ -69,7 +69,7 @@ sudo docker attach mynodered
 ```
 $ mkdir example
 $ cd example
-$ wget https://raw.githubusercontent.com/jetsonworld/
+$ wget https://raw.githubusercontent.com/jugfk/
 $ sudo docker build --tag hello:0.1 .
 $ sudo docker run --name hello-nginx -d -p 80:80 -v /root/data:/data hello:0.1
 ```
